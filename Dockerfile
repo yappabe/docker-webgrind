@@ -12,8 +12,8 @@ RUN ln -s /etc/nginx/sites-available/webgrind /etc/nginx/sites-enabled/webgrind
 RUN rm /etc/nginx/sites-enabled/default
 
 # install webgrind from git
-RUN git clone https://github.com/jokkedk/webgrind /var/www
-RUN chown www-data:www-data -R /var/www
+RUN git clone https://github.com/jokkedk/webgrind /opt/webgrind
+RUN chown www-data:www-data -R /opt/webgrind
 
 # expose only nginx HTTP port
 EXPOSE 80
